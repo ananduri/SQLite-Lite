@@ -9,10 +9,12 @@
 (Split into select or insert statement
 
  ((Execute select statement)
+  (Get location of row in pager (in memory))
   (Deserialize every row)
   (Print every row))
 
  ((Execute insert statement)
+  (Get location of row in pager (in memory))
   (Serialize row)
   (Increment number of rows in table))
   
