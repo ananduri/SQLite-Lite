@@ -1,0 +1,7 @@
+Goal is, should compile after going through all the diffs
+without having to look at the complete diff at the bottom
+
+1. switch (do_meta_command(input_buffer, table)) {
+   in part 5
+
+
