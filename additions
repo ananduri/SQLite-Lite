@@ -4,4 +4,11 @@ without having to look at the complete diff at the bottom
 1. switch (do_meta_command(input_buffer, table)) {
    in part 5
 
+2. "get get" under Insertion Into a Leaf Node in part 8
 
+3. The first diff adding the function leaf_node_num_cells
+under accessing leaf node fields, in part 8
+has a (char*) in front of node, in the return statement
+
+which is not there in the final diff
+and which causes a compiler warning.

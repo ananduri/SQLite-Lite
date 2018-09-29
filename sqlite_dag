@@ -77,3 +77,75 @@
 
 
 (How are B-trees balanced?)
+
+
+
+
+(What is a page?)
+
+(A page is the atom of 'disk'
+ that the computer reads)
+
+(Each node corresponds to one page
+ Or, each node /is stored by/ one page)
+
+(Internal nodes point to their children
+ by storing the page number that stores the child)
+
+(Pages themselves are stored in the database file
+ in order of page number)
+ 
+(A B-tree is identified by the page number
+ of its root node)
+
+
+
+
+(Pages are associated with a database (file),
+ and not individual tables)
+
+
+
+
+
+
+(If db is a simple list or array or rows
+ We identify a position/row with just the row number)
+ 
+(If db has tables stored as trees,
+ We identify a position/row by the page number of the node,
+ and the cell number within the node)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(How many bits in a byte?)
+
+;; relate to hexadecimal <-> 16
+
+(2 hexadecimal numbers correspond to one byte)
+
+(2 hexadecimal numbers is 16 * 16 values)
+(or 2^4 * 2^4 -> 2^8, which is number of spaces in a byte)
+
+(8)
