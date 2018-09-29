@@ -78,6 +78,17 @@
 
 (How are B-trees balanced?)
 
+(After a deletion, balancing involves
+ (either
+  getting donated elements from siblings
+  or
+  merging the node with a sibling))
+  
+(What about balancing after an insertion?)
+
+
+
+
 
 
 
