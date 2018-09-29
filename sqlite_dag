@@ -41,6 +41,44 @@
 (Why do B-trees have more than 2 children?
  Why do 'regular' trees have only 2 children?)
 
+(Moving through a regular tree involves
+ going from node to node
+ each of which is a jump in memory)
+ 
+(Moving through a btree of a db involves
+ scanning internal nodes
+ each of which is a jump in memory
+ and going from node to node
+ each of which is a /disk seek/)
+ 
+(Disk seeks are /extremely/ expensive
+ (How expensive?)
+ (Factor of ___ compared to RAM access))
+ 
+(Minimize the number of disk seeks
+ by minimizing the height of the tree)
+ 
+(Minimize the height of the tree
+ by increasing the number of children)
+ 
+(Of course, if you take this to the extreme,
+ you are scanning through one array again.)
+ 
+(A balance is achieved by keeping the pieces you scan
+ (<-->
+  (the /pages/)
+  (or, the number of split points))
+ small,
+ but not so small that
+ you have to descend many levels of the tree)
+ 
+(Think of the B-tree like
+ a slight nudge in the direction of a tree
+ from an array)
+ 
+
+
+
 
 
 

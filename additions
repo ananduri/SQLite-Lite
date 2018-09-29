@@ -12,3 +12,8 @@ has a (char*) in front of node, in the return statement
 
 which is not there in the final diff
 and which causes a compiler warning.
+
+4. int32_t instead of uint32_t under "Next, copy every cell into its new location:"
+in part 10
+
+5. get_unused_page_num vs. get_unused_pages ?
