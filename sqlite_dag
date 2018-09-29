@@ -20,3 +20,60 @@
   
   )
    
+
+
+
+
+((Why B-trees?)
+ (Searching is fast (O (log N)))
+ (Inserting is fast (O (log N)))
+ (Unlike a hash table,
+  traversing a range of values is fast))
+
+
+
+(How do you ensure B-trees stay balanced?
+ (Nodes have to have number of children \in [m/2, m]))
+
+
+
+
+(Why do B-trees have more than 2 children?
+ Why do 'regular' trees have only 2 children?)
+
+
+
+
+
+(SQLite uses both B-trees and B+ trees.
+ What's the difference?)
+
+(Internal nodes are different)
+
+(Difference:
+ (B-trees:
+  internal nodes store keys and values)
+ (B+ trees:
+  internal nodes only store keys))
+  
+(Translates to:
+ (B-trees:
+  used for /indexes/)
+ (B+ trees:
+  used for /tables/))
+
+
+
+(How to remember?
+ (B-trees:
+  the 'natural' definition, of internal and leaf nodes
+  being symmetric)
+ (B+ trees:
+  the 'augmented' version for faster speed,
+  where a modification, viz. removal of values from internal nodes, is made))
+
+
+
+
+
+(How are B-trees balanced?)
