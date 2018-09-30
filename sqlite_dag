@@ -46,7 +46,7 @@
  each of which is a jump in memory)
  
 (Moving through a btree of a db involves
- scanning internal nodes
+ doing binary search on internal nodes
  each of which is a jump in memory
  and going from node to node
  each of which is a /disk seek/)
@@ -62,7 +62,7 @@
  by increasing the number of children)
  
 (Of course, if you take this to the extreme,
- you are scanning through one array again.)
+ you are doing binary search through one array again.)
  
 (A balance is achieved by keeping the pieces you scan
  (<-->
@@ -74,8 +74,17 @@
  
 (Think of the B-tree like
  a slight nudge in the direction of a tree
- from an array)
+ from a /sorted/ array)
  
+(Still a sorted array,
+ but now the chunks of the array are
+ separated in memory,
+ allowing it to be /dynamic/
+ 
+ (in other words, to alter it,
+  you don't have to re-copy the whole thing))
+
+
 
 
 
