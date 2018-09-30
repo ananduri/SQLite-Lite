@@ -128,7 +128,7 @@
 (After a deletion, balancing involves
  (either
   getting donated elements from siblings
-  or
+  ;or
   merging the node with a sibling))
   
 (What about balancing after an insertion?)
@@ -158,9 +158,10 @@
 
 
 
-
 (Pages are associated with a database (file),
  and not individual tables)
+
+;; there might be more to it
 
 
 
